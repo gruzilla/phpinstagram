@@ -1,0 +1,44 @@
+Instagram PHP API
+=================
+
+Copyright: (c) 2010-2011 Matthias Steinböck <matthias@abendstille.at>
+License: New BSD License (enclosed in file docs/LICENSE)
+
+ToC
+===
+Why
+Completeness
+Requirements
+Examples
+
+
+
+Why?
+====
+
+Instagram has not yet released its api allthough allready using one.
+I captured my iphones traffic using wireshark and reverse ingeneered
+the api they use.
+
+Completeness?
+=============
+
+The API is by far not complete. The only part that is done by now is
+reading your's and other persons feed. Feel free to extend the api,
+some files allready exist and contain information about the urls and
+parameters instagram expects.
+
+Requirements?
+=============
+
+This API-implementation is based on Zend Framework (its autoloader and
+on Zend_HTTP_Client which is very useful over plain curl ;)
+
+Examples?
+=========
+
+See docs/example/example.php and docs/example/bootstrap.php - you will
+find a script that checks your feed and is also able to show other
+persons feed.
+
+Feel free to use this scripts for whatever reason you might need it.

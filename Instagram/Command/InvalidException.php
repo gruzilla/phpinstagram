@@ -1,0 +1,10 @@
+<?php
+/**
+ * @category   Instagram
+ * @package    Instagram_Command
+ * @copyright  Copyright (c) 2010-2011 Matthias Steinbšck <matthias@abendstille.at>
+ * @license    New BSD License (enclosed file docs/LICENSE)
+ */
+class Instagram_Command_InvalidException extends Instagram_Exception
+{
+}
