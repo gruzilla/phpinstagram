@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * This example uses the instagram api for displaying your and other users feed.
  * you can pass the user-primary-key via the GET-parameter "user".
@@ -18,6 +18,7 @@ $deviceId = 'YOUR_DEVICES_ID';	// you can provide any device id you want eg. myl
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>Instagram PHP-Library</title>
 	<style type="text/css">
 		body {

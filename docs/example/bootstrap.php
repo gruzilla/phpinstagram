@@ -1,8 +1,8 @@
-<?php
+﻿<?php
 /**
  * @category   Instagram
  * @package    Instagram
- * @copyright  Copyright (c) 2010-2011 Matthias Steinb�ck <matthias@abendstille.at>
+ * @copyright  Copyright (c) 2010-2011 Matthias Steinböck <matthias@abendstille.at>
  * @license    New BSD License (enclosed file docs/LICENSE)
  *
  * bootstraping file, puts zend framework in the include path and registers Instagram
@@ -25,7 +25,7 @@ defined('APPLICATION_ENV')
 
 // ensure, zendfw and missredak can be found
 set_include_path(implode(PATH_SEPARATOR, array(
-	realpath(APPLICATION_PATH.'/../../zendfw/library'),
+	realpath(APPLICATION_PATH.'/../zendfw/library'),
 	get_include_path(),
 )));
 
