@@ -1,8 +1,8 @@
-<?php
+ï»¿<?php
 /**
  * @category   Instagram
  * @package    Instagram
- * @copyright  Copyright (c) 2010-2011 Matthias Steinbšck <matthias@abendstille.at>
+ * @copyright  Copyright (c) 2010-2011 Matthias Steinbï¿½ck <matthias@abendstille.at>
  * @license    New BSD License (enclosed file docs/LICENSE)
  */
 class Instagram_User
@@ -33,6 +33,8 @@ class Instagram_User
 	 * @var string
 	 */
 	public $full_name;
+	
+	// TODO: incomplete - see user info
 	
 	/**
 	 * fetches a user from the repository according to its primary key

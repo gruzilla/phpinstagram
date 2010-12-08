@@ -1,8 +1,8 @@
-<?php
+﻿<?php
 /**
  * @category   Instagram
  * @package    Instagram_Feed
- * @copyright  Copyright (c) 2010-2011 Matthias Steinb�ck <matthias@abendstille.at>
+ * @copyright  Copyright (c) 2010-2011 Matthias Steinböck <matthias@abendstille.at>
  * @license    New BSD License (enclosed file docs/LICENSE)
  */
 class Instagram_Feed_Entry
@@ -90,7 +90,7 @@ class Instagram_Feed_Entry
 			self::$__entries[$entryData->pk]->code = $entryData->code;
 			
 			self::$__entries[$entryData->pk]->comments = array();
-			if (is_array($entryData->comments)) foreach ($entryData->comments as $comment) {
+			if (isset($entryData->comments) && is_array($entryData->comments)) foreach ($entryData->comments as $comment) {
 				if (!is_object($comment))  {
 					throw new Instagram_ParseException('Error: could not translate the following into '.
 						"an Instagram_Comment:\n".var_export($comment,1));
@@ -110,7 +110,7 @@ class Instagram_Feed_Entry
 				self::$__entries[$entryData->pk]->filter_type = $entryData->filter_type;
 			
 			self::$__entries[$entryData->pk]->image_versions = array();
-			if (is_array($entryData->image_versions)) foreach ($entryData->image_versions as $image) {
+			if (isset($entryData->image_versions) && is_array($entryData->image_versions)) foreach ($entryData->image_versions as $image) {
 				if (!is_object($image)) {
 					throw new Instagram_ParseException('Error: could not translate the following into '.
 						"an Instagram_Image:\n".var_export($image,1));
@@ -125,7 +125,7 @@ class Instagram_Feed_Entry
 			}
 			
 			self::$__entries[$entryData->pk]->likers = array();
-			if (is_array($entryData->likers)) foreach ($entryData->likers as $liker) {
+			if (isset($entryData->likers) && is_array($entryData->likers)) foreach ($entryData->likers as $liker) {
 				if (!is_object($liker)) {
 					throw new Instagram_ParseException('Error: could not translate the following into '.
 						"an Instagram_User:\n".var_export($liker,1));

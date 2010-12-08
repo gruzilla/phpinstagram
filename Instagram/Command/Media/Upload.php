@@ -14,15 +14,15 @@ class Instagram_Command_Media_Upload extends Instagram_Command_AbstractCommand
 --0xKhTmLbOuNdArY
 Content-Disposition: form-data; name="device_timestamp"
 
-1291341673
+0
 --0xKhTmLbOuNdArY
 Content-Disposition: form-data; name="lat"
 
-48.19865
+0
 --0xKhTmLbOuNdArY
 Content-Disposition: form-data; name="lng"
 
-16.38231
+0
 --0xKhTmLbOuNdArY
 Content-Disposition: form-data; name="photo"; filename="file"
 Content-Type: application/octet-stream

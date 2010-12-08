@@ -1,17 +1,17 @@
-<?php
+﻿<?php
 /**
  * @category   Instagram
  * @package    Instagram_Command_User
- * @copyright  Copyright (c) 2010-2011 Matthias Steinb�ck <matthias@abendstille.at>
+ * @copyright  Copyright (c) 2010-2011 Matthias Steinböck <matthias@abendstille.at>
  * @license    New BSD License (enclosed file docs/LICENSE)
  */
 class Instagram_Command_User_Info extends Instagram_Command_AbstractCommand
 {
 /**
  * TODO:
- * GET /api/v1/users/437748/info/ HTTP/1.1\r\n
+ * GET /api/v1/users/[pk]/info/ HTTP/1.1\r\n
  * n/a
- * {"status": "ok", "user": {"username": "neni", "media_count": 41, "following_count": 6, "profile_pic_url": "http://distillery.s3.amazonaws.com/profiles/anonymousUser.jpg", "full_name": "neni", "follower_count": 5, "pk": 437748}}
+ * {"status": "ok", "user": {"username": "xxx", "media_count": 0, "following_count": 0, "profile_pic_url": "http://xxx.jpg", "full_name": "xxx", "follower_count": 0, "pk": pk}}
  */
 	
 }

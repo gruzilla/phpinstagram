@@ -1,8 +1,8 @@
-<?php
+﻿<?php
 /**
  * @category   Instagram
  * @package    Instagram_Command_Feed
- * @copyright  Copyright (c) 2010-2011 Matthias Steinb�ck <matthias@abendstille.at>
+ * @copyright  Copyright (c) 2010-2011 Matthias Steinböck <matthias@abendstille.at>
  * @license    New BSD License (enclosed file docs/LICENSE)
  */
 class Instagram_Command_Feed_Timeline extends Instagram_Command_AbstractCommand
