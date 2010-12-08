@@ -16,8 +16,8 @@ Examples
 Why?
 ====
 
-Instagram has not yet released its api allthough allready using one.
-I captured my iphones traffic using wireshark and reverse ingeneered
+Instagram has not yet released its api although already using one.
+I captured my iphones traffic using wireshark and reverse engineered
 the api they use.
 
 Completeness?
@@ -25,7 +25,7 @@ Completeness?
 
 The API is by far not complete. The only part that is done by now is
 reading your's and other persons feed. Feel free to extend the api,
-some files allready exist and contain information about the urls and
+some files already exist and contain information about the urls and
 parameters instagram expects.
 
 Requirements?
