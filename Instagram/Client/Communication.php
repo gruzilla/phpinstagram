@@ -19,9 +19,10 @@ class Instagram_Client_Communication
 	
 	
 	public function __construct() {
-		$this->_client = new Zend_Http_Client('http://instagr.am/api', array(
+		$this->_client = new Instagram_Client('http://instagr.am/api', array(
 			'keepalive' => true
 		));
+		$this->_client->setHeaders('Accept', 'application/xml');
 		$this->_client->setCookieJar();
 	}
 	

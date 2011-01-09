@@ -33,7 +33,13 @@ $deviceId = 'YOUR_DEVICES_ID';	// you can provide any device id you want eg. myl
 		div {
 			margin-bottom: 50px;
 		}
-	</style>
+	</style><?php
+		if (isset($_GET['customcss'])) {
+			$url = parse_url($_GET['customcss']);
+			$url = 'http://'.$url['host'].$url['path'].(!empty($url['query']) ? $url['query'] : '');
+			echo '<link href="'.$url.'" rel="stylesheet" ref="stylesheet" />';
+		}
+	?>
 </head>
 <body>
 <?php
@@ -95,7 +101,7 @@ try {
 	
 	$inst->auth->login($username, $password, $deviceId);
 	
-	if (isset($_GET['user']) && is_numeric($_GET['user'])) {
+	if (isset($_GET['user']) && is_numeric($_GET['user']) && !isset($_GET['hidebacklink'])) {
 		echo '<p><a href="index.php">&lt;&lt; Back to my feed</a></p>';
 		$feed = $inst->feed->user((int)$_GET['user']);
 	} else {
@@ -110,7 +116,7 @@ try {
 		echo printEntry($rentry);
 	}
 } catch (Instagram_Exception $ex) {
-	echo "\n\n   ERROR: \n\n$ex\n\n";
+	echo "<pre>\n\n   ERROR: {$ex->getMessage()}\n\n".var_export($ex->getResponse(),1)."\n\n$ex\n\n</pre>";
 }
 ?>
 </body></html>

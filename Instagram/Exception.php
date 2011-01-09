@@ -7,4 +7,13 @@
  */
 class Instagram_Exception extends Exception
 {
+	protected $_response;
+	
+	public function setResponse($response) {
+		$this->_response = $response;
+	}
+	
+	public function getResponse() {
+		return $this->_response;
+	}
 }

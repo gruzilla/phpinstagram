@@ -33,10 +33,12 @@ class Instagram_Command_Login extends Instagram_Command_AbstractCommand
 		
 		$response = $client->request(Zend_Http_Client::POST);
 		
-		$success = json_decode($response->getBody(), true);
+		$success = Instagram_Client_Marshaller::unmarshall($response->getBody(), true);
 		
-		if ($success['status'] != 'ok') {
-			throw new Instagram_Command_LoginFailedException($success['message']);
+		if ($success->status != 'ok') {
+			$ex = new Instagram_Command_LoginFailedException($success->message);
+			$ex->setResponse($response);
+			throw $ex;
 		}
 		
 		$this->getResponse()->setData($success);

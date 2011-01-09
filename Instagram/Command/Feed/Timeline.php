@@ -24,7 +24,7 @@ class Instagram_Command_Feed_Timeline extends Instagram_Command_AbstractCommand
 		$body = $response->getBody();
 		$this->getResponse()->setData(
 			self::parseResponse(
-				json_decode($body)
+				Instagram_Client_Marshaller::unmarshall($body)
 			)
 		);
 	}
